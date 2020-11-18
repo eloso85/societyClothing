@@ -1,6 +1,6 @@
 //components
 import Nav from './components/Navigation'
-
+import Banner from './components/Banner'
 //css
 import './App.css';
 //pages
@@ -16,8 +16,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
+      <Banner/>
     <Router>
-      
+        
         <Nav />
         <Switch>
         <Route exact path="/"><Home/></Route>

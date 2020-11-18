@@ -1,0 +1,32 @@
+.banner_img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/iverson.jpg);
+    height:400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Add the blur effect */
+    /* filter: blur(2px);
+    -webkit-filter: blur(2px); */
+  }
+  
+  .banner_text{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color:red;
+    font-weight: bold;
+    border: 3px solid red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 4vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  
+  
