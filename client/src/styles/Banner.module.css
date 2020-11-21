@@ -1,5 +1,6 @@
+
 .banner_img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/iverson.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/iverson.jpg);
     height:300px;
     background-size: cover;
     background-position: center;
