@@ -1,24 +1,25 @@
 import React,{useState, useEffect} from 'react';
-import productss from "../api/ProductApi"
-const url = productss;
+import axios from 'axios'
+
+
 
 const Api = () =>{
-    const [product, setProduct] = useState([]);
+    const [products, setProduct] = useState([]);
 
-   const getProduct = async()=>{
-       const response = await fetch(url);
-       const productData = await response.json();
-       console.log(productData);
-   };
+   useEffect (()=>{
+       const fetchData = async ()=>{
+           const {data} = await axios.get('/api/products')
+           setProduct(data);
+           console.log(data)
 
-   useEffect(()=>{
-       getProduct();
-   })
-
+       };
+       fetchData()
+   },[])
+console.log(products[0])
 return(
    <>
    
-    <h3>github users</h3>
+<h3>{products.name}</h3>
 
    </>
 )

@@ -1,7 +1,7 @@
 const data ={
     products:[
         {
-            name:"Nike shirt"
+            name:"Nike box"
         }
     ]
 }
